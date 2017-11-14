@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { DropdownButton, MenuItem} from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { ButtonGroup } from 'react-bootstrap';
-import List from './List';
 
 class Buttons extends Component {
 	
@@ -26,9 +25,6 @@ class Buttons extends Component {
 	             </ButtonGroup>
 	              
 	             <input type="text" placeholder="Search" onChange={this.props.onSearch} />
-	             <div>
-	             	<List items={this.props.processList()}/>
-	             </div>
 	         </div>
 	    )
 	}

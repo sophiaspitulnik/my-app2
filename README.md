@@ -1,3 +1,71 @@
+HERE IS A LINK TO MY APP: https://sophiaspitulnik.github.io/my-app2/
+You can just copy this link into your browser to view the app.
+
+
+HOW INTERFACE THE RELATES TO THE DESIGN PRINCIPLES LEARNED IN CLASS
+  * The buttons have the affordance of being rounded and shadowed, just like a real world three dementional button.
+    This makes it easier for the user to understand that the buttons are clickable.
+  * The buttons get darker when the user hovers over them so that the user knos that they can be clicked
+  * The catagories that the user can chose to sort by are catagoried cleaarly under the drop down menus. 
+  * The content is organized in a grid for clear understanding
+  * Each chunk of content is group closely together so that is easy to understand what text belongs next to what picture
+
+
+HOW DATA IS PASSED DOWN THROUGH YOUR COMPONENTS
+  * There is an array of objects in the App component
+      * Each of these objects has a name, type, type2 and image
+  * The App component creates the FilteredList component and passes it the array
+  * The FilteredList component has two functions that sort and filter the data depending on which buttons
+    were pressed and which event handlers were called
+      * The processList function sorts the data alphebetically if the correct button was pushed 
+      * and calls the filterItem function
+      * The filterItem function filters the data depending on which buttons and categories were selected
+  * The FilteredList component creates the List component and passes it the return of the processList function
+      * So the List component only gets the data that was not filted out
+  * The List component displays the data
+
+
+HOW USER INTERACTIONS CAN TRIGGER CHANGES IN THE STATE OF COMPONENTS
+  * In the Button component there are visual buttons
+  * When the user clicks on one of these buttons or selects a catagory from a drop down menu then
+    one of the event handlers in the filterItem list is called
+  * The event handler causes a change in state for one of the keys
+  * Process list sorts the data based on the state of one of the keys and calls filterItem which
+    filters the data depending on the various states of the keys
+
+
+THE OVERALL GOAL AND VALUE OF THE APPLICATION
+  * The overall goal of the application is to be able to sort and filter through data while providing
+    a visual representation to the user
+  * It is very valubale for a use to be able to sort and filter through information on a page
+    so that they do not have to read through or skim everything but instead can just pull up
+    the information that they need
+  * Each user that comes to the page may have a different goal or different information that they are
+    searching for. The buttons, filtering and sorting allow the user to directly manipulate the information
+    so that they can find the most relevant information quickly
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BELLOW IS THE READ ME THAT GITHUB CREATED. 
+IM NOT SURE IF IT IS RELEVEANT FOR YOU BUT I THOUGHT I WOULD LEAVE IT JUST IN CASE.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

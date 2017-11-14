@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Buttons from './Buttons';
+import List from './List';
 
 class FilteredList extends Component {
    constructor(props) {
@@ -11,6 +12,7 @@ class FilteredList extends Component {
            sortAZ: false
        };
    }
+   
    onSearch = (event) => {
        this.setState({search: event.target.value.trim().toLowerCase()});
    }
@@ -66,7 +68,7 @@ class FilteredList extends Component {
             <div className="filter-list">
                <h1>Tallest Mountains</h1>
                <Buttons onType={this.onType} onType2={this.onType2} onSortAZ={this.onSortAZ} onSearch={this.onSearch} items={this.props.items} processList={this.processList} />
-
+               <List items={this.processList()}/>
            </div>
        );
    }
