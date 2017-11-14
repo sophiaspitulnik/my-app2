@@ -2,7 +2,7 @@ HERE IS A LINK TO MY APP: https://sophiaspitulnik.github.io/my-app2/
 You can just copy this link into your browser to view the app.
 
 
-HOW INTERFACE THE RELATES TO THE DESIGN PRINCIPLES LEARNED IN CLASS
+HOW THE INTERFACE RELATES TO THE DESIGN PRINCIPLES LEARNED IN CLASS
   * The buttons have the affordance of being rounded and shadowed, just like a real world three dementional button.
     This makes it easier for the user to understand that the buttons are clickable.
   * The buttons get darker when the user hovers over them so that the user knos that they can be clicked
@@ -11,7 +11,7 @@ HOW INTERFACE THE RELATES TO THE DESIGN PRINCIPLES LEARNED IN CLASS
   * Each chunk of content is group closely together so that is easy to understand what text belongs next to what picture
 
 
-HOW DATA IS PASSED DOWN THROUGH YOUR COMPONENTS
+HOW DATA IS PASSED DOWN THROUGH THE COMPONENTS
   * There is an array of objects in the App component
       * Each of these objects has a name, type, type2 and image
   * The App component creates the FilteredList component and passes it the array
